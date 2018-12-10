@@ -3,6 +3,7 @@
 通过webapck4 搭建 vue 多页面工程 参考： https://juejin.im/post/5b9b4f046fb9a05d37618115
 
 ## 目录
+```js
 
 ├── README.md
 ├── build                               // webapck 配置
@@ -21,3 +22,4 @@
 |     ├── page1.js
 |     └── page2.js
 └── yarn.lock
+```
