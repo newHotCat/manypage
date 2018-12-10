@@ -4,23 +4,20 @@
 
 ## 目录
 
-project
-  |- bulid                   <!-- 这个目录是自动生成的-->
-       |- public
-       |- css
-       |- js
-       |- page1.html             <!-- 插件生成的html文件-->
-       |- page2.html             <!-- 插件生成的html文件-->
-       ...
-  |- public/                 <!-- 存放字体、图片、网页模板等静态资源-->
-  |- src                     <!-- 源码文件夹-->
-       |- components/
-       |- css/
-       |- js/
-       |- page1.js               <!-- 每个页面唯一的VUE实例，需绑定到#app-->
-       |- page2.js               <!-- 每个页面唯一的VUE实例，需绑定到#app-->
-       ...
-  |- package.json
-  |- package-lock.json
-  |- README.md
-
+├── README.md
+├── build                               // webapck 配置
+|  ├── webpack.common.js
+|  ├── webpack.dev.js
+|  └── webpack.prod.js
+├── package.json
+├── postcss.config.js
+├── public                              // 静态文件
+|  └── template.html
+├── src                                 // 工程
+|  ├── components                       // vue 实例使用的组件
+|  |  ├── page1
+|  |  └── page2
+|  └── js                               // 每个js都是一个vue实例
+|     ├── page1.js
+|     └── page2.js
+└── yarn.lock
